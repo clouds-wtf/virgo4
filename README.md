@@ -16,8 +16,13 @@ Most AI agent frameworks demand cloud APIs and leak intent via clearnet searches
 Deploy the full stack with turnkey privacy (SearXNG routed via VPN):
 
 ```bash
-git clone [https://github.com/clouds-wtf/virgo4.git](https://github.com/clouds-wtf/virgo4.git)
+git clone git@github.com:clouds-wtf/virgo4.git
 cd virgo4
 
 # Deploy with the VPN profile enabled
 docker compose --profile vpn up -d
+```
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
