@@ -228,7 +228,7 @@
 
         .cards-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 2rem;
             max-width: 1200px;
             margin: 0 auto;
@@ -263,6 +263,17 @@
             color: var(--text-muted);
             font-size: 0.95rem;
         }
+        .gif-placeholder {
+            margin-top: 1rem;
+            padding: 1rem;
+            border: 1px dashed var(--border-color);
+            border-radius: 6px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            background: rgba(0,0,0,0.2);
+            font-style: italic;
+        }
     </style>
 </head>
 <body>
@@ -292,8 +303,7 @@
             <span class="highlight">YOURS.</span>
         </h1>
         <p class="hero-desc">
-            A cloud-native, open-source Hierarchical Multi-Agent System (HMAS). 
-            Batteries included: bring your own models and enjoy durable orchestration, agentic RAG, and secure VPN/proxy egress routing.
+            Most AI agent frameworks demand cloud APIs, leak intent via clearnet searches, and lock you out while they "think." Virgo4 is engineered from the ground up for strict local-first execution, tenant isolation, and real-time collaboration.
         </p>
 
         <div class="terminal">
@@ -304,7 +314,7 @@
                 <span>One-Click Quickstart (Bash)</span>
                 <span style="color: var(--text-muted);">MIT License</span>
             </div>
-            <div class="cmd-line">git clone [https://github.com/clouds-wtf/virgo4.git](https://github.com/clouds-wtf/virgo4.git)</div>
+            <div class="cmd-line">git clone https://github.com/clouds-wtf/virgo4.git</div>
             <div class="cmd-line">cd virgo4</div>
             <div class="cmd-output"># Deploy with full privacy (SearXNG routed via VPN)</div>
             <div class="cmd-line">docker compose --profile vpn up -d</div>
@@ -335,27 +345,44 @@
             <div class="section-title">Engineering Architecture</div>
             <h2 class="section-heading">How Virgo Protects Your Data</h2>
             <p class="section-desc">
-                Most AI agent frameworks demand cloud APIs and leak intent via clearnet searches. Virgo is engineered from the ground up for strict local-first execution.
+                Virgo doesn't just execute commands; it learns how you operate, strictly on your terms.
             </p>
         </div>
 
         <div class="cards-grid">
             <div class="feature-card">
                 <div class="card-number">01</div>
+                <h3 class="card-title">Real-Time Interjection</h3>
+                <p class="card-text">
+                    Unlike traditional agents where you fire a prompt and wait, Virgo's asynchronous architecture allows for true real-time interjection. You can interrupt, steer, or correct an agent mid-thought or mid-execution.
+                </p>
+                <div class="gif-placeholder">
+                    [ Demo GIF coming soon ]
+                </div>
+            </div>
+            <div class="feature-card">
+                <div class="card-number">02</div>
+                <h3 class="card-title">Adaptive User Memory</h3>
+                <p class="card-text">
+                    Built-in conversational memory allows the system to continuously adapt to your infrastructure, preferences, and coding style. This intelligence is strictly partitioned per account by default, meaning your personal agent grows alongside you while remaining entirely private.
+                </p>
+            </div>
+            <div class="feature-card">
+                <div class="card-number">03</div>
                 <h3 class="card-title">Strictly Opt-In Egress</h3>
                 <p class="card-text">
                     Out of the box, zero user queries hit the public internet. Web search and URL scraping tools run through prioritized failover tiers, natively supporting bundled Gluetun VPN tunnels and authenticated proxies.
                 </p>
             </div>
             <div class="feature-card">
-                <div class="card-number">02</div>
+                <div class="card-number">04</div>
                 <h3 class="card-title">Durable Agent Sagas</h3>
                 <p class="card-text">
                     Long-running autonomous tasks survive pod evictions and node reboots. By decoupling workflow state from the API process using Temporal, Virgo ensures execution guarantees for complex multi-agent reasoning loops.
                 </p>
             </div>
             <div class="feature-card">
-                <div class="card-number">03</div>
+                <div class="card-number">05</div>
                 <h3 class="card-title">Deep Semantic RAG</h3>
                 <p class="card-text">
                     Massive documents are automatically chunked and ingested via local fastembed BM25 sparse vectors and LiteLLM dense embeddings. Context retrieval is merged via Reciprocal Rank Fusion (RRF) and reordered by a HuggingFace TEI cross-encoder.
