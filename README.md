@@ -21,3 +21,8 @@ cd virgo4
 
 # Deploy with the VPN profile enabled
 docker compose --profile vpn up -d
+```
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
