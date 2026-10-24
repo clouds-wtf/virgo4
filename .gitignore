@@ -1,0 +1,68 @@
+# =============================================================================
+# Virgo4 — Monorepo .gitignore
+# Combined from rob/virgo3 (backend) and rob/hmas-client (frontend), updated
+# for the /ui + /backend layout.
+# =============================================================================
+
+# =========================
+# 12-Factor: Secrets & Config
+# =========================
+.env
+.env.*
+!.env.example
+secrets/
+*.pem
+*.key
+
+# =========================
+# Python — backend/
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.coverage
+coverage/
+htmlcov/
+
+# =========================
+# Node — ui/
+# =========================
+node_modules/
+dist-ssr/
+*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.eslintcache
+
+# =========================
+# Data, Caches & Local State
+# =========================
+*.log
+*.sqlite
+chroma_data/
+.cache/
+
+# =========================
+# Editor & OS (Vim & System)
+# =========================
+.vscode/
+.idea/
+*.swp
+.*.swp
+*~
+*.swo
+.viminfo
+Session.vim
+.DS_Store
+Thumbs.db
