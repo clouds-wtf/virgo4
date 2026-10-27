@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Virgo | Private. Local. Yours.</title>
+    <!-- Add favicon link -->
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -319,7 +321,7 @@
                 <p>Unlike traditional agents where you fire a prompt and wait, Virgo's asynchronous architecture allows for true real-time interjection. You can interrupt, steer, or correct an agent mid-thought or mid-execution natively.</p>
             </div>
             <div class="feature-visual">
-                <div class="visual-placeholder">[ Interactive interjection GIF will go here ]</div>
+                <div class="visual-placeholder" style="border-style: dashed; padding: 3rem;">[ Animated Interjection GIF Pending ]</div>
             </div>
         </div>
 
@@ -329,7 +331,37 @@
                 <p>Virgo doesn't just execute commands; it learns how you operate. Built-in conversational memory allows the system to continuously adapt to your infrastructure and coding style. This intelligence is strictly partitioned per account by default—your personal agent grows alongside you while remaining entirely private.</p>
             </div>
             <div class="feature-visual">
-                <div class="visual-placeholder">[ Memory partition architecture diagram ]</div>
+                <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; padding: 20px;">
+<svg width="100%" height="100%" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <!-- Base elements -->
+  <rect x="30" y="30" width="340" height="190" rx="8" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="2"/>
+  
+  <!-- Personal Memory -->
+  <rect x="50" y="50" width="130" height="150" rx="6" fill="#0f172a" stroke="#3b82f6" stroke-width="2"/>
+  <text x="115" y="80" fill="#f8fafc" font-family="JetBrains Mono, monospace" font-size="14" font-weight="bold" text-anchor="middle">PERSONAL</text>
+  <text x="115" y="100" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="10" text-anchor="middle">Tenant Isolated</text>
+  <!-- Lock icon -->
+  <path d="M105,130 v-10 a10,10 0 0,1 20,0 v10 h5 v20 h-30 v-20 h5 m5,-10 a5,5 0 0,1 10,0" fill="none" stroke="#3b82f6" stroke-width="2"/>
+  <circle cx="115" cy="140" r="2" fill="#3b82f6"/>
+  
+  <!-- Shared Memory -->
+  <rect x="220" y="50" width="130" height="150" rx="6" fill="#0f172a" stroke="#a855f7" stroke-width="2"/>
+  <text x="285" y="80" fill="#f8fafc" font-family="JetBrains Mono, monospace" font-size="14" font-weight="bold" text-anchor="middle">SHARED</text>
+  <text x="285" y="100" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="10" text-anchor="middle">Household Pool</text>
+  <!-- Multi-user icon -->
+  <circle cx="275" cy="120" r="6" fill="none" stroke="#a855f7" stroke-width="2"/>
+  <path d="M265,140 a10,10 0 0,1 20,0" fill="none" stroke="#a855f7" stroke-width="2"/>
+  <circle cx="295" cy="125" r="5" fill="none" stroke="#a855f7" stroke-width="2"/>
+  <path d="M290,140 a8,8 0 0,1 12,0" fill="none" stroke="#a855f7" stroke-width="2"/>
+
+  <!-- Connecting Router logic -->
+  <rect x="150" y="10" width="100" height="24" rx="4" fill="#1e293b" stroke="rgba(255,255,255,0.2)"/>
+  <text x="200" y="26" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="10" text-anchor="middle">RAG ROUTER</text>
+  <path d="M200,34 v10 M200,44 h-85 v6 M200,44 h85 v6" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+  <polygon points="110,48 115,52 120,48" fill="rgba(255,255,255,0.3)"/>
+  <polygon points="280,48 285,52 290,48" fill="rgba(255,255,255,0.3)"/>
+</svg>
+</div>
             </div>
         </div>
 
@@ -339,7 +371,40 @@
                 <p>Out of the box, zero user queries hit the public internet. Web search and URL scraping tools run through prioritized failover tiers, natively supporting bundled Gluetun VPN tunnels and authenticated proxies.</p>
             </div>
             <div class="feature-visual">
-                <div class="visual-placeholder">[ Network topology / VPN routing visual ]</div>
+                <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; padding: 20px;">
+<svg width="100%" height="100%" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <!-- Agent -->
+  <rect x="20" y="100" width="70" height="50" rx="6" fill="#0f172a" stroke="#3b82f6" stroke-width="2"/>
+  <text x="55" y="130" fill="#f8fafc" font-family="JetBrains Mono, monospace" font-size="12" text-anchor="middle">AGENT</text>
+  
+  <!-- Firewall -->
+  <rect x="130" y="80" width="20" height="90" rx="4" fill="#020617" stroke="#ef4444" stroke-width="2"/>
+  <path d="M135,95 h10 M135,110 h10 M135,125 h10 M135,140 h10 M135,155 h10" fill="none" stroke="#ef4444" stroke-width="1"/>
+  <text x="140" y="190" fill="#ef4444" font-family="JetBrains Mono, monospace" font-size="10" text-anchor="middle">DENY</text>
+
+  <!-- Clear text warning -->
+  <path d="M95,125 l15,-15 M95,110 l15,15" stroke="#ef4444" stroke-width="2"/>
+  <path d="M90,125 h30" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="2"/>
+
+  <!-- Arrow down then right -->
+  <path d="M55,150 v40 h115" fill="none" stroke="#3b82f6" stroke-width="2"/>
+  <polygon points="165,185 175,190 165,195" fill="#3b82f6"/>
+
+  <!-- Gluetun VPN -->
+  <rect x="180" y="165" width="100" height="50" rx="6" fill="#0f172a" stroke="#a855f7" stroke-width="2"/>
+  <text x="230" y="190" fill="#f8fafc" font-family="JetBrains Mono, monospace" font-size="12" text-anchor="middle" font-weight="bold">GLUETUN</text>
+  <text x="230" y="205" fill="#a855f7" font-family="JetBrains Mono, monospace" font-size="9" text-anchor="middle">VPN Tunnel</text>
+
+  <!-- Arrow to internet -->
+  <path d="M280,190 h30" fill="none" stroke="#a855f7" stroke-width="2"/>
+  <polygon points="305,185 315,190 305,195" fill="#a855f7"/>
+
+  <!-- Internet -->
+  <circle cx="340" cy="190" r="25" fill="#0f172a" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+  <path d="M320,190 h40 M340,165 v50 M325,175 q15,-5 30,0 M325,205 q15,5 30,0" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="340" y="235" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="10" text-anchor="middle">INTERNET</text>
+</svg>
+</div>
             </div>
         </div>
 
@@ -349,17 +414,94 @@
                 <p>Long-running autonomous tasks survive pod evictions and node reboots. By decoupling workflow state from the API process using Temporal, Virgo ensures execution guarantees for complex multi-agent reasoning loops.</p>
             </div>
             <div class="feature-visual">
-                <div class="visual-placeholder">[ Temporal durable execution flow ]</div>
+                <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; padding: 20px;">
+<svg width="100%" height="100%" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <!-- Agent Execution Node -->
+  <rect x="30" y="40" width="100" height="40" rx="20" fill="#0f172a" stroke="#3b82f6" stroke-width="2"/>
+  <text x="80" y="65" fill="#f8fafc" font-family="JetBrains Mono, monospace" font-size="12" text-anchor="middle">Execution</text>
+  
+  <!-- Pod Evicted Node (Failure) -->
+  <rect x="180" y="40" width="120" height="40" rx="4" fill="#0f172a" stroke="#ef4444" stroke-width="2" stroke-dasharray="4"/>
+  <text x="240" y="65" fill="#ef4444" font-family="JetBrains Mono, monospace" font-size="12" text-anchor="middle">Pod Evicted</text>
+  
+  <!-- Arrow from Execute to Failure -->
+  <path d="M130,60 h40" fill="none" stroke="#94a3b8" stroke-width="2"/>
+  <polygon points="165,55 175,60 165,65" fill="#94a3b8"/>
+  <path d="M150,55 l10,10 M150,65 l10,-10" stroke="#ef4444" stroke-width="2"/>
+  
+  <!-- Temporal DB Node (State Preserved) -->
+  <rect x="120" y="140" width="160" height="60" rx="8" fill="#1e293b" stroke="#a855f7" stroke-width="2"/>
+  <text x="200" y="165" fill="#f8fafc" font-family="JetBrains Mono, monospace" font-size="14" font-weight="bold" text-anchor="middle">TEMPORAL SDK</text>
+  <text x="200" y="185" fill="#a855f7" font-family="JetBrains Mono, monospace" font-size="10" text-anchor="middle">Workflow State Preserved</text>
+  
+  <!-- Execute -> Temporal (Heartbeat) -->
+  <path d="M80,80 v55" fill="none" stroke="#3b82f6" stroke-width="2" stroke-dasharray="2,2"/>
+  <polygon points="75,130 80,135 85,130" fill="#3b82f6"/>
+  <text x="80" y="115" fill="#3b82f6" font-family="JetBrains Mono, monospace" font-size="8" text-anchor="end" transform="translate(-5,0)">Sync</text>
+  
+  <!-- Temporal -> Recovery -->
+  <path d="M160,200 v20 h180 v-160 h-30" fill="none" stroke="#10b981" stroke-width="2"/>
+  <polygon points="315,55 305,60 315,65" fill="#10b981"/>
+  
+  <!-- Recovery Node -->
+  <rect x="310" y="40" width="60" height="40" rx="20" fill="#0f172a" stroke="#10b981" stroke-width="2"/>
+  <text x="340" y="65" fill="#f8fafc" font-family="JetBrains Mono, monospace" font-size="12" text-anchor="middle">Resume</text>
+</svg>
+</div>
             </div>
         </div>
 
         <div class="feature-row">
             <div class="feature-text">
                 <h3>Deep Semantic RAG</h3>
-		<p>Massive documents are automatically chunked and ingested using local fastembed BM25 sparse vectors alongside Bring-Your-Own dense embeddings routed via LiteLLM. Context retrieval is merged via Reciprocal Rank Fusion (RRF) and reordered by a HuggingFace TEI cross-encoder.</p>
+                <p>Massive documents are automatically chunked and ingested using local fastembed BM25 sparse vectors alongside Bring-Your-Own dense embeddings (routed seamlessly via Virgo's internal LiteLLM gateway). Context retrieval is merged via Reciprocal Rank Fusion (RRF) and reordered by a HuggingFace TEI cross-encoder.</p>
             </div>
             <div class="feature-visual">
-                <div class="visual-placeholder">[ Hybrid search vector DB diagram ]</div>
+                <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; padding: 20px;">
+<svg width="100%" height="100%" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <!-- Input Doc -->
+  <rect x="20" y="100" width="40" height="50" rx="4" fill="#1e293b" stroke="#94a3b8" stroke-width="2"/>
+  <path d="M30,110 h20 M30,120 h20 M30,130 h10" fill="none" stroke="#94a3b8" stroke-width="2"/>
+  <text x="40" y="165" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="10" text-anchor="middle">Doc</text>
+
+  <!-- Split arrows -->
+  <path d="M60,125 h30 v-40 h20" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+  <polygon points="105,80 115,85 105,90" fill="rgba(255,255,255,0.3)"/>
+  
+  <path d="M60,125 h30 v40 h20" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+  <polygon points="105,160 115,165 105,170" fill="rgba(255,255,255,0.3)"/>
+
+  <!-- FastEmbed Node -->
+  <rect x="120" y="65" width="100" height="40" rx="6" fill="#0f172a" stroke="#a855f7" stroke-width="2"/>
+  <text x="170" y="85" fill="#f8fafc" font-family="JetBrains Mono, monospace" font-size="10" font-weight="bold" text-anchor="middle">FASTEMBED</text>
+  <text x="170" y="98" fill="#a855f7" font-family="JetBrains Mono, monospace" font-size="9" text-anchor="middle">Sparse BM25</text>
+
+  <!-- LiteLLM Node -->
+  <rect x="120" y="145" width="100" height="40" rx="6" fill="#0f172a" stroke="#3b82f6" stroke-width="2"/>
+  <text x="170" y="165" fill="#f8fafc" font-family="JetBrains Mono, monospace" font-size="10" font-weight="bold" text-anchor="middle">LITELLM</text>
+  <text x="170" y="178" fill="#3b82f6" font-family="JetBrains Mono, monospace" font-size="9" text-anchor="middle">Dense BYOM</text>
+
+  <!-- Arrows to Fusion -->
+  <path d="M220,85 h30 v30 h10" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+  <polygon points="255,110 265,115 255,120" fill="rgba(255,255,255,0.3)"/>
+  
+  <path d="M220,165 h30 v-30 h10" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+  <polygon points="255,130 265,135 255,140" fill="rgba(255,255,255,0.3)"/>
+
+  <!-- Fusion Node -->
+  <rect x="270" y="100" width="40" height="50" rx="20" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+  <text x="290" y="129" fill="#10b981" font-family="JetBrains Mono, monospace" font-size="11" font-weight="bold" text-anchor="middle">RRF</text>
+
+  <!-- Final arrow to TEI -->
+  <path d="M310,125 h20" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+  <polygon points="325,120 335,125 325,130" fill="rgba(255,255,255,0.3)"/>
+
+  <!-- TEI Node -->
+  <rect x="340" y="95" width="45" height="60" rx="6" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
+  <text x="362" y="125" fill="#f59e0b" font-family="JetBrains Mono, monospace" font-size="12" font-weight="bold" text-anchor="middle">TEI</text>
+  <text x="362" y="140" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="8" text-anchor="middle">Rerank</text>
+</svg>
+</div>
             </div>
         </div>
     </section>
